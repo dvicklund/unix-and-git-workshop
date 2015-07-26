@@ -1,0 +1,44 @@
+Git
+  A git repository is a collection of points in time with history showing where you've been
+  Each point has a unique hash
+  A "branch" is a label that points to a specific point in time
+  "Master" branch is the main, present version of your project
+    +Separation of the master branch from testing branches keeps bugs from being introduced into the main version of the project
+  -to destroy a local repository, delete the hidden .git folder
+<<<<<<< HEAD
+  -After pushing, developers make pull requests when they have completed their work.
+  -a pull request lets the manager of the project know that work is ready to be reviewed
+=======
+
+>>>>>>> 8993ca04a61b9cf9dc772068272f69a79203c9c3
+
+Git Workflow:
+  1. modify/create a file
+  2. add (stage) the file
+  3. commit the change - snapshot of that file at that point in time is saved
+    -until you commit, nothing is permanent
+
+Git Commands and such
+  git init = initialize a new repository in the working directory (use only once)
+  git status = shows information about the current state of your repository - use it to see which files need to be added and which have been changed and are awaiting commits
+  git add = adds files to the staging area
+  git commit = commits the change
+    -m = adds a message in quotations -- 'git commit -m "message or comments here"'
+      if you do not use the -m flag, it will open a text editor to add your comment
+    each commit saves:
+      -the changes made to each file on the stage
+      -the identity of the person who made the changes
+      -date and time of change
+      -brief message about nature of changes
+      -universally unique id for the changes
+  git log = shows log of changes made to the repository
+    can be displayed in a variety of ways
+  git branch "new branch name"= creates a new branch for your repo
+    - git branch (with no name) shows active branch with an asterisk before it
+  git push = sends changes from local repository to a remote
+  git pull = rolls two commands into one step
+    -fetches changes
+    -merges branches
+    austinbrovick edits
+
+

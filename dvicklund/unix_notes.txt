@@ -1,0 +1,243 @@
+#git-notes.txt
+#David Vicklund
+#25 July 2015
+
+
+1 unix command line
+2 git workflow
+3 github
+
+Github will be the homework submission system
+
+Group Projects
+  Esp. all on githun
+
+Why Version Control
+  *backup
+  *share
+  *collaborate
+
+Succeed Silently, Fail Violently
+ (lol)
+
+Why Unix?
+  *Apps need a home
+    -laptop, phone, web browser, server
+  Unix Servers
+    Any kind of app development will have to interact with unix
+    The industry standard
+    More stable
+    Much faster (generally)
+    More compatible
+    More "free" (literally)
+    More open (source obviously)
+
+What is Unix?
+  It's an operating system (duh)
+  Multi-process, multi-user
+  Developed by Ken Thompson, Dennis Ritchie (and others)
+  Developed in AT&T Bell Labs in the 1970s
+  Released in 1973
+
+Why so popular?
+  Free, stable, open
+  Built with developers in mind
+  3 reasons:
+    Data as plaintext files
+    Many small, highly specialized programs
+    Input-Output redirection
+
+Unix Kernel
+  Just a program that manages the hardware
+
+Unix Shell
+  User interface (easy peas)
+
+Concept: the Path
+  Absolute when starts with "/"
+  Relative if not
+
+Commands:
+  pwd = present working directory: shows present working path
+  cd = change directory
+    cd .. = go up one directory
+    cd ../.. = go up 2 directories
+    cd ~ = go directly to the home directory
+      Alternatively: "~" does the same thing
+  ls = list files
+    -a = shows ALL files (including hidden)
+    -t = sort by modification time
+    -l = long list (extra info)
+    -r = reverse ordering
+    ls / = list root directory
+    ls ~ = list home directory
+  man = manual: display help text for input command
+  mv = move files from place to place
+    *also rename files
+  touch = creates a file
+
+
+Unix Naming Conventions
+  Do not use spaces
+    Instead, use - or _
+    Helps with OS's which do not play friendly with spaces
+    OSX and Windows are case insensitive, so foo.jpg and FOO.JPG are the same
+    Linux, however, is case sensitive
+    Prefer lower-case letters when naming files
+
+Protect Files
+  GitHub will store your stuff on the cloud
+
+
+    (Output of "history >> unix_notes.txt")
+  {
+    subl unix_notes.txt
+    ls
+    mv git-notes.txt unix_notes.txt
+    cd uge_workshop/
+    mv moving_around.txt uge_workshop/
+    subl git-notes.txt
+    mv git-notes.txt uge_workshop/git-notes.txt
+    mkdir uge_workshop
+    subl moving_around.txt
+    ls -l
+    dir
+    mv cmdhistory.txt moving_around.txt
+    subl cmdhistory.txt
+    ls -t
+    history > cmdhistory.txt
+    cd codefellows
+    cd Data
+    cd media/david
+    cd ..
+    man less
+    less --help
+    less
+    history | less
+    man history
+    history
+    ~
+    /
+    ...
+    man ls
+    manlas
+    cd SublimeLinter3-david/
+    cd tmp
+    `
+    ls -l /
+    ls /
+    cd /etc
+    ls ~
+    ..
+    ../..
+    .. ..
+    cd
+    cd..
+    cd ../Downloads/
+    cd Music
+    cd david
+    cd David
+    cd home
+    cd ../..
+    cd ../Pictures
+    cd Downloads
+    pwd
+    ./
+    .
+    cd share
+    cd bin/
+    cd /usr/
+    cd /usr/David/
+    cd codefellows/
+    cd lost+found/
+    sudo chmod 777 lost+found/
+    sudo chmod 777 codefellows/
+    sudo chmod 777 Data
+    chmod 777 Data
+    chmod 777 /Data
+    sudo cd lost+found/
+    sudo mkdir codefellows
+    mkdir codefellows
+    manls
+    cd data
+    ls -lt
+    list
+    sudo chmod 755 david
+    sudo chmod 777 david
+    chmod 777 /david/
+    chmod --help
+    chmod +777
+    chmod 777
+    clear
+    sudo rm -r folder
+    rm -r folder
+    sudo mkdir folder
+    help
+    find data
+    sudo ..
+    man
+    ls data
+    cd media
+    cd /mnt
+    subl mtools.conf
+    subl mtool
+    cd etc
+    subl control
+    cd mapper
+    cd dev
+    cd /dec
+    cd /home
+    ls [s,d]
+    ls *[s, d]
+    ls [s]
+    exit
+    ls s*
+    ls *s
+    ls s
+    subl
+    git --version
+    sudo subl /etc/samba/smb.conf
+    subl /etc/samba/smb.conf
+    sudo subl /etc/samba/smbusers
+    sudo smbpasswd -a david
+    sudo smbpasswd -a dvicklund
+    sudo apt-get install cifs-utils
+    sudo apt-get install smbfs
+    sudo apt-get install samba
+    cp CarstsEuropeScenario_v3.scn /home/david/.openttd/scenario/
+    cp CarstsEuropeScenario_v3_1950.scn /home/david/.openttd/scenario/
+    cd Downloads/
+    cd downloads
+    cd scenario/
+    cd .openttd/
+    sudo cd .openttd/
+    cd /.openttd
+    steam
+    sudo apt-get install steam
+    sudo apt-get install lib32z1
+    sudo apt-get install ia32-libs
+    sudo apt-get update
+    sudo dpkg --add-architecture i386
+    google-chrome-stable
+    curl -fsSL http://git.io/Ggdljw | sh
+    git config --global user.email 'david@vicklund.com'
+    git config --global user.name 'David Vicklund'
+    sudo apt-get install -y git
+    echo $PATH
+    echo $EDITOR
+    subl ~/.config/fish/config.fish
+    sudo apt-get install -y sublime-text-installer
+    sudo apt-get check
+    fish_update_completions
+    curl -fsSL http://git.io/beJs | ruby
+    curl
+    sudo apt-get install ruby
+    chsh -s /usr/bin/fish
+    sudo apt-get install -y fish git
+    sudo apt-add-repository -y ppa:git-core/ppa
+    sudo apt-add-repository -y ppa:webupd8team/sublime-text-3
+    sudo apt-add-repository -y ppa:fish-shell/release-2
+    curl -fsSL http://git.io/Ak1LNQ | sh
+    sudo apt-get install -y curl
+    uname
+  }
